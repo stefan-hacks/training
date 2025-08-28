@@ -1,3 +1,4 @@
+```
 __     _____  ____  ____  
 \ \   / /_ _|/ /  \/  \ \ 
  \ \ / / | || || |\/| || |
@@ -5,6 +6,7 @@ __     _____  ____  ____
    \_/  |___| ||_|  |_|| |
              \_\      /_/
 
+```
 # 30min_Vim_workout
 # By: Stefan-hacks
 
@@ -79,10 +81,47 @@ Vim has seven primary modes:
 3. **Visual Mode** - For selecting text (Press `v`)
 4. **Visual Line Mode** - For selecting lines (Press `V`)
 5. **Visual Block Mode** - For block selection (Press `Ctrl+v`)
+
+```
+    linux the planet
+
+
 6. **Command Mode** - For entering commands (Press `:`)
 7. **Replace Mode** - For overwriting text (Press `R`)
 
 Try switching between modes on this text. Enter Insert mode with `i`, type something, then press `Esc` to return to Normal mode.
+
+### SAMPLE EXERCISE
+```
+Linux
+  
+     <operating system> ("Linus Unix") /li'nuks/ (but see below)
+     An implementation of the {Unix} {kernel} originally written
+     from scratch with no proprietary code.
+  
+     The kernel runs on {Intel} and {Alpha} hardware in the general
+     release, with {SPARC}, {PowerPC}, {MIPS}, {ARM}, {Amiga},
+     {Atari}, and {SGI} in active development.  The SPARC, PowerPC,
+     ARM, {PowerMAC} - {OSF}, and 68k ports all support {shells},
+     {X} and {networking}.  The Intel and SPARC versions have
+     reliable {symmetric multiprocessing}.
+  
+     Work on the kernel is coordinated by Linus Torvalds, who holds
+     the copyright on a large part of it.  The rest of the
+     copyright is held by a large number of other contributors (or
+     their employers).  Regardless of the copyright ownerships, the
+     kernel as a whole is available under the {GNU} {General Public
+     License}.  The GNU project supports Linux as its kernel until
+     the research {Hurd} kernel is completed.
+  
+     This kernel would be no use without {application programs}.
+     The GNU project has provided large numbers of quality tools,
+     and together with other {public domain} software it is a rich
+     Unix environment.  A compilation of the Linux kernel and these
+     tools is known as a Linux distribution.  Compatibility modules
+     and/or {emulators} exist for dozens of other computing
+     environments.
+```
 
 ## Advanced Editing Techniques
 
@@ -101,6 +140,29 @@ N    - Previous search result
 :%s/old/new/gc - Replace with confirmation
 ```
 
+## Working with Files
+
+Essential file operations:
+
+```
+:q          - Quit
+:q!         - Quit without saving
+:w          - Save
+:wq or :x   - Save and quit
+```
+
+## Code-Specific Techniques
+
+Use these commands for efficient coding:
+
+```
+>>    - Indent line
+<<    - Unindent line
+==    - Auto-indent line
+%     - Jump to matching bracket
+gd    - Go to definition
+g*    - Search for word under cursor
+```
 Practice on this code snippet:
 
 ```javascript
@@ -113,68 +175,6 @@ function calculateTotal(items) {
 }
 ```
 
-## Working with Files
-
-Essential file operations:
-
-```
-:q          - Quit
-:q!         - Quit without saving
-:w          - Save
-:wq or :x   - Save and quit
-:e filename - Open file
-:ls         - List open buffers
-:bn         - Next buffer
-:bp         - Previous buffer
-```
-
-## Code-Specific Techniques
-
-Use these commands for efficient coding:
-
-```
->>    - Indent line
-<<    - Unindent line
-==    - Auto-indent line
-gg=G  - Auto-indent entire file
-%     - Jump to matching bracket
-gd    - Go to definition
-g*    - Search for word under cursor
-```
-
-Try these on the following code:
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Example Page</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Welcome to Vim</h1>
-        <p>Practice makes perfect!</p>
-    </div>
-</body>
-</html>
-```
-
-## Practice Exercise
-
-Let's practice what we've learned:
-
-1. Navigate to the function below
-2. Change the function name from "oldFunction" to "newFunction"
-3. Change the parameter from "x" to "number"
-4. Delete the console.log statement
-5. Auto-indent the code with `==`
-
-```javascript
-function oldFunction(x) {
-console.log("This function needs work");
-  return x * 2;
-}
-```
 
 ## Conclusion
 
