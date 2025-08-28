@@ -1,0 +1,187 @@
+__     _____  ____  ____  
+\ \   / /_ _|/ /  \/  \ \ 
+ \ \ / / | || || |\/| || |
+  \ V /  | || || |  | || |
+   \_/  |___| ||_|  |_|| |
+             \_\      /_/
+
+# 30min_Vim_workout
+# By: Stefan-hacks
+
+## Introduction
+Welcome to this 30-minute Vim tutorial! Vim is a powerful modal text editor that's highly efficient for both coding and text editing. Let's get started!
+
+## Navigation
+
+Let's start by navigating our text file:
+
+```
+h    - Move left
+j    - Move down
+k    - Move up
+l    - Move right
+
+w    - Jump to start of next word
+b    - Jump to start of previous word
+e    - Jump to end of word
+
+0    - Jump to start of line
+^    - Jump to the first character on the line
+$    - Jump to end of line
+
+gg   - Go to first line of file
+G    - Go to last line of file
+:n   - Go to line number n (e.g., :10 goes to line 10)
+
+Ctrl+u - Move up half a page
+Ctrl+d - Move down half a page
+Ctrl+f - Move forward one page
+Ctrl+b - Move backward one page
+```
+
+    Let's practice navigation in this text. Move to the beginning of this line with `0`, then to the end with `$`. Try moving word by word with `w` and `b`. Now go back to the very first character at the beginning of the word "Let's" with `^`.
+
+## Basic Editing
+
+Now let's learn some basic editing commands:
+
+```
+i    - Insert before cursor
+a    - Insert after cursor
+I    - Insert at beginning of line
+A    - Insert at end of line
+o    - Open new line below
+O    - Open new line above
+x    - Delete character under cursor
+dd   - Delete current line
+yy   - Yank (copy) current line
+p    - Paste after cursor
+P    - Paste before cursor
+u    - Undo
+Ctrl+r - Redo
+.    - Repeat last command
+```
+
+Try these commands on the code example below:
+
+```python
+def hello_world():
+    print("Hello, World!")
+    return True
+```
+
+## Vim Modes
+
+Vim has seven primary modes:
+
+1. **Normal Mode** (Default) - For navigation and commands (Press `Esc`)
+2. **Insert Mode** - For typing text (Press `i`)
+3. **Visual Mode** - For selecting text (Press `v`)
+4. **Visual Line Mode** - For selecting lines (Press `V`)
+5. **Visual Block Mode** - For block selection (Press `Ctrl+v`)
+6. **Command Mode** - For entering commands (Press `:`)
+7. **Replace Mode** - For overwriting text (Press `R`)
+
+Try switching between modes on this text. Enter Insert mode with `i`, type something, then press `Esc` to return to Normal mode.
+
+## Advanced Editing Techniques
+
+Let's explore more powerful editing commands:
+
+```
+dw   - Delete word
+cw   - Change word (delete word and enter insert mode)
+ci"  - Change inside quotes
+ci(  - Change inside parentheses
+ct<char> - Change until character
+/pattern - Search for pattern
+n    - Next search result
+N    - Previous search result
+:%s/old/new/g - Replace all old with new
+:%s/old/new/gc - Replace with confirmation
+```
+
+Practice on this code snippet:
+
+```javascript
+function calculateTotal(items) {
+  let total = 0;
+  for (let i = 0; i < items.length; i++) {
+    total += items[i].price * items[i].quantity;
+  }
+  return total;
+}
+```
+
+## Working with Files
+
+Essential file operations:
+
+```
+:q          - Quit
+:q!         - Quit without saving
+:w          - Save
+:wq or :x   - Save and quit
+:e filename - Open file
+:ls         - List open buffers
+:bn         - Next buffer
+:bp         - Previous buffer
+```
+
+## Code-Specific Techniques
+
+Use these commands for efficient coding:
+
+```
+>>    - Indent line
+<<    - Unindent line
+==    - Auto-indent line
+gg=G  - Auto-indent entire file
+%     - Jump to matching bracket
+gd    - Go to definition
+g*    - Search for word under cursor
+```
+
+Try these on the following code:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Vim</h1>
+        <p>Practice makes perfect!</p>
+    </div>
+</body>
+</html>
+```
+
+## Practice Exercise
+
+Let's practice what we've learned:
+
+1. Navigate to the function below
+2. Change the function name from "oldFunction" to "newFunction"
+3. Change the parameter from "x" to "number"
+4. Delete the console.log statement
+5. Auto-indent the code with `==`
+
+```javascript
+function oldFunction(x) {
+console.log("This function needs work");
+  return x * 2;
+}
+```
+
+## Conclusion
+
+You've completed the basic Vim tutorial! Remember:
+- Practice regularly to build muscle memory
+- Start with basic commands and gradually add more advanced ones
+- Use `:help [command]` to learn more about any command
+- Vim's power comes from combining commands (e.g., d2w = delete 2 words)
+
+Happy editing! To exit, type `:wq` and press Enter.
