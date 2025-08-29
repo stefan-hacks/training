@@ -25,7 +25,7 @@ Essential file operations:
 :wq or :x   - Save and quit
 ```
 
-## Navigation
+## Navigation - (LDUR)
 
 ```
 h    - Move left
@@ -38,8 +38,8 @@ b    - Jump to start of previous word
 e    - Jump to end of word
 
 0    - Jump to start of line
-^    - Jump to the first character on the line
 $    - Jump to end of line
+     ^    - Jump to the first character on the line
 
 }    - Jump to the next paragraph empty space
 {    - Jump to the previous paragraph empty space
@@ -168,7 +168,7 @@ N    - Previous search result
 :%s/old/new/g - Replace all old with new
 :%s/old/new/gc - Replace with confirmation
 ```
-
+Record & automate any command and use q - macros. To start and stop your recordings.
 
 ## Code-Specific Techniques
 
